@@ -36,22 +36,12 @@ export default function SocialCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 60, rotateX: 10 }}
-      whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-      transition={{ 
-        duration: 0.8, 
-        delay,
-        type: "spring",
-        stiffness: 100
-      }}
-      viewport={{ once: true }}
+      initial={{ opacity: 1 }}
       className={`modern-card rounded-3xl p-8 group relative overflow-hidden ${
         isClickable ? "cursor-pointer" : ""
       }`}
       whileHover={{
-        y: -12,
-        scale: 1.03,
-        rotateY: 2,
+        scale: 1.02,
       }}
       whileTap={isClickable ? { scale: 0.98 } : {}}
       onClick={isClickable ? handleClick : undefined}

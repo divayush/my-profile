@@ -104,13 +104,7 @@ export default function SocialLinksSection() {
         </motion.div>
 
         {/* Social Cards Grid */}
-        <motion.div
-          className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-20"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.8 }}
-          viewport={{ once: true }}
-        >
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-20">
           {socialLinks.map((social, index) => (
             <SocialCard
               key={social.platform}
@@ -118,7 +112,7 @@ export default function SocialLinksSection() {
               onClick={social.copyable ? handleCopyDiscord : undefined}
             />
           ))}
-        </motion.div>
+        </div>
 
         {/* Enhanced Call to Action */}
         <motion.div
