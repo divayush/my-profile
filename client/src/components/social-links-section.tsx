@@ -117,9 +117,9 @@ export default function SocialLinksSection() {
         {/* Enhanced Call to Action */}
         <motion.div
           className="text-center"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
           <div className="modern-card rounded-3xl p-12 max-w-4xl mx-auto relative overflow-hidden">
@@ -155,7 +155,7 @@ export default function SocialLinksSection() {
                 className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.2 }}
+                transition={{ delay: 0.1 }}
               >
                 I'm always excited about new projects, collaborations, and opportunities. Whether you have an idea, need help with development, or just want to chat about technology.
               </motion.p>
